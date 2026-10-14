@@ -8,7 +8,7 @@
 app:
   # Nome do seu sistema: aparece no menu e no título das páginas.
   # TROQUE para o nome do seu projeto (ex.: "Estoque Fácil", "OS Técnica").
-  nome: "Meu Sistema"
+  nome: "CaboGestão"
   seguranca:
     # Segurança (login). Fica desligada até o Encontro 7.
     ativa: false
@@ -46,8 +46,7 @@ spring:
       path: /h2-console
       settings:
         # Permite abrir o console pelo endereço do Codespaces (apenas desenvolvimento)
-        web-allow-others: true
-
+        web-allow-others: true                                                   
   # Sem cache: alterações nas páginas aparecem ao recarregar o navegador.
   thymeleaf:
     cache: false

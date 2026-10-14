@@ -6,9 +6,9 @@
 
 | | |
 |---|---|
-| **Aluno(a)** | Seu nome completo |
-| **Turma** | |
-| **Opção escolhida** | Ordens de Serviço · Controle de Estoque · Agendamento de Serviços · Proposta própria |
+| **Aluno(a)** | Eduardo Massi |
+| **Turma** |TEC-N-001788/2026 |
+| **Opção escolhida** | Controle de Estoque |
 | **Versão atual** | 0.1.0 |
 
 ---
@@ -16,18 +16,18 @@
 ## 1. Visão geral
 
 ### 1.1 Problema
-<!-- Que problema o sistema resolve? Quem sofre com esse problema hoje e como ele é resolvido (planilha, papel, WhatsApp...)? 3 a 5 linhas. -->
+<!-- Que problema o sistema resolve? Quem sofre com esse problema hoje e como ele é resolvido (planilha, papel, WhatsApp...)? 3 a 5 linhas. -->O sistema busca resolver o problema da desorganização no controle de estoque, que pode dificultar o acompanhamento dos produtos disponíveis. Atualmente, esse controle pode ser realizado de forma manual, por meio de anotações, planilhas ou outros métodos pouco centralizados. Isso pode causar erros na quantidade registrada, perda de informações e dificuldade para identificar produtos que precisam ser repostos. O sistema pretende centralizar e facilitar o gerenciamento dessas informações.
 
 ### 1.2 Canvas do projeto
 
 | Bloco | Resposta |
 |---|---|
-| **Usuários** (quem usa o sistema) | |
-| **Problema** (dor atual) | |
-| **Proposta de valor** (o que melhora com o sistema) | |
-| **Funcionalidades principais** | |
-| **Informações que o sistema guarda** | |
-| **Indicadores** (o que o gestor quer acompanhar) | |
+| **Usuários** (quem usa o sistema) |Funcionários responsáveis pelo estoque e gestores do estabelecimento. |
+| **Problema** (dor atual) | Desorganização no controle de produtos, dificuldade para saber as quantidades disponíveis e risco de falta ou excesso de estoque.|
+| **Proposta de valor** (o que melhora com o sistema) |Centralizar o controle do estoque, facilitando o cadastro, a consulta e a atualização dos produtos e permitindo acompanhar melhor a situação do estoque. |
+| **Funcionalidades principais** | 	Cadastrar, editar, excluir e consultar produtos; registrar entradas e saídas de produtos; controlar quantidades em estoque; pesquisar produtos; identificar produtos com estoque baixo.|
+| **Informações que o sistema guarda** |	Produtos, código, nome, descrição, categoria, quantidade em estoque, estoque mínimo, preço e registros de entradas e saídas. |
+| **Indicadores** (o que o gestor quer acompanhar) |	Quantidade total de produtos, produtos com estoque baixo, produtos sem estoque, entradas e saídas de produtos e valor estimado do estoque. |
 | **Restrições** (prazo, tecnologia, equipe) | Projeto individual · Java 21 · Spring Boot 4 · entrega v1.0 em 11/11 |
 
 ---
