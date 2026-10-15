@@ -1,4 +1,4 @@
-# Nome do Sistema
+# CaboGestão 
 
 > Substitua o título acima pelo nome do seu sistema e preencha cada seção deste documento.
 > Este README é o **documento de visão** do projeto (entrega **AVA 1**) e, ao longo do curso,
@@ -38,9 +38,9 @@
 
 | ID | Requisito | Nível |
 |---|---|---|
-| RF01 | Ex.: O sistema deve permitir cadastrar, listar, editar e excluir categorias. | Essencial |
-| RF02 | | |
-| RF03 | | |
+| RF01 |O sistema deve permitir pesquisar produtos e identificar aqueles com estoque baixo. | Essencial |
+| RF02 |O sistema deve permitir cadastrar, listar, editar e excluir produtos. |Essencial |
+| RF03 |O sistema deve permitir registrar entradas e saídas de produtos do estoque. |Essencial |
 
 ### 2.2 Requisitos não funcionais (COMO o sistema deve ser)
 
@@ -48,14 +48,14 @@
 |---|---|
 | RNF01 | O sistema deve ser acessado pelo navegador (aplicação web). |
 | RNF02 | O sistema deve exigir login e senha; as senhas devem ser armazenadas criptografadas. |
-| RNF03 | |
+| RNF03 |O sistema deve possuir uma interface simples e fácil de utilizar. |
 
 ### 2.3 Regras de negócio (as REGRAS do negócio que o sistema precisa respeitar)
 
 | ID | Regra |
 |---|---|
-| RN01 | Ex.: Não é permitido registrar uma saída maior que o saldo do produto. |
-| RN02 | |
+| RN01 |  Não é permitido registrar uma saída maior que o saldo do produto. |
+| RN02 |Todo produto deve possuir nome, código e quantidade inicial válida. |
 
 ---
 
@@ -63,12 +63,17 @@
 
 Formato: **Como** *[papel]*, **quero** *[ação]*, **para** *[benefício]*.
 
-**HU01 —** Como ..., quero ..., para ...
-- Critério de aceite: ...
-- Critério de aceite: ...
+**HU01 —** Como funcionário responsável pelo estoque, quero cadastrar produtos, para manter as informações organizadas.
 
-**HU02 —** Como ..., quero ..., para ...
-- Critério de aceite: ...
+Critério de aceite: O sistema deve permitir informar o código, nome, descrição, categoria e quantidade do produto.
+
+Critério de aceite: O sistema deve informar quando os dados obrigatórios não forem preenchidos.
+
+**HU02 —**Como funcionário responsável pelo estoque, quero registrar entradas e saídas de produtos, para manter as quantidades atualizadas.
+
+Critério de aceite: O sistema deve atualizar a quantidade disponível após cada movimentação.
+
+
 
 ---
 
@@ -76,7 +81,33 @@ Formato: **Como** *[papel]*, **quero** *[ação]*, **para** *[benefício]*.
 
 <!-- Encontro 2: apague este comentário (as duas linhas) e cole aqui o diagrama de classes
      em Mermaid (bloco que começa com ```mermaid), conforme o manual do Encontro 2. -->
-
+```mermaid
+classDiagram
+    direction LR
+    class Categoria {
+        Long id
+        String nome
+        String descricao
+    }
+    class Produto {
+        Long id
+        String codigo
+        String nome
+        String unidade
+        BigDecimal precoCusto
+        Integer estoqueMinimo
+        Integer saldo
+    }
+    class Movimentacao {
+        Long id
+        String tipo
+        Integer quantidade
+        LocalDateTime dataHora
+        String observacao
+    }
+    Categoria "1" --> "*" Produto : classifica
+    Produto "1" --> "*" Movimentacao : registra
+```
 ---
 
 ## 5. Como executar
