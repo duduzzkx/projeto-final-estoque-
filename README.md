@@ -1,8 +1,5 @@
 # CaboGestão 
 
-> Substitua o título acima pelo nome do seu sistema e preencha cada seção deste documento.
-> Este README é o **documento de visão** do projeto (entrega **AVA 1**) e, ao longo do curso,
-> também será o manual técnico de como executar o sistema.
 
 | | |
 |---|---|
@@ -41,6 +38,7 @@
 | RF01 |O sistema deve permitir pesquisar produtos e identificar aqueles com estoque baixo. | Essencial |
 | RF02 |O sistema deve permitir cadastrar, listar, editar e excluir produtos. |Essencial |
 | RF03 |O sistema deve permitir registrar entradas e saídas de produtos do estoque. |Essencial |
+| RF04 |O sistema deve permitir visualizar o histórico de entradas e saídas de cada produto, informando a data, a quantidade e o tipo de movimentação.|Essencial |
 
 ### 2.2 Requisitos não funcionais (COMO o sistema deve ser)
 

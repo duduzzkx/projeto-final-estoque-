@@ -1,12 +1,12 @@
 /* Estilos do projeto. A base visual vem do Bootstrap 5; aqui ficam só os ajustes. */
 
 :root {
-    --cor-principal: #1f4e79;   /* troque pela cor do seu sistema */
-    --cor-principal-escura: #163a5b;
+    --cor-principal: #064e91ec;   /* troque pela cor do seu sistema */
+    --cor-principal-escura: #ecb314;
 }
 
 body {
-    background: #f5f7f9;
+    background: #eaecee;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
