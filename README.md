@@ -150,3 +150,44 @@ Java 21 · Spring Boot 4 · Spring MVC · Thymeleaf · Bootstrap 5 · Spring Dat
 |---|---|---|---|
 | admin | admin123 | Administrador | Tudo |
 | operador | operador123 | Operador | Consulta produtos e categorias e registra movimentações |
+
+## 9. Funcionalidades e telas
+
+### Funcionalidades
+- Cadastro de produtos e categorias.
+- Registro de entradas e saídas, com atualização automática do saldo.
+- Alerta de produtos abaixo do estoque mínimo.
+- Painel com os indicadores do estoque.
+- Login com dois perfis: o Administrador pode tudo; o Operador consulta produtos e categorias e registra movimentações.
+
+### Telas
+
+**Painel com os indicadores do estoque**
+
+![Painel com os indicadores do estoque](docs/painel.png)
+
+**Movimentações de entrada e saída**
+
+![Movimentações de entrada e saída](docs/movimentacoes.png)
+
+**Regra de negócio: saída maior que o saldo**
+
+![Regra de negócio: saída maior que o saldo](docs/regra.png)
+
+**Tela de login**
+
+![Tela de login](docs/login.png)
+
+## 10. Checklist do nível essencial
+
+- [x] O sistema sobe sem erros seguindo a seção 5 (Como executar)
+- [x] Cadastro completo de produtos (cadastrar, listar, editar e excluir), com validação
+- [x] Cadastro completo de categorias, com validação
+- [x] Movimentações ligadas aos produtos (e produtos ligados às categorias), com lista de escolha no formulário
+- [x] Regra de negócio 1: A saída não pode ser maior que o saldo do produto.
+- [x] Regra de negócio 2: Alerta quando o saldo fica abaixo do estoque mínimo.
+- [x] Login com 2 perfis (admin e operador), senhas criptografadas e acesso conforme o perfil
+- [x] Painel com os indicadores na página inicial
+- [x] Repositório no GitHub com commits frequentes
+- [x] README com a visão do projeto, como executar, usuários de teste, funcionalidades e telas
+- [x] Quadro Kanban atualizado
