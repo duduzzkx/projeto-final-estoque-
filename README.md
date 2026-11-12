@@ -6,7 +6,7 @@
 | **Aluno(a)** | Eduardo Massi |
 | **Turma** |TEC-N-001788/2026 |
 | **Opção escolhida** | Controle de Estoque |
-| **Versão atual** | 0.1.0 |
+| **Versão atual** | 1.0.0 |
 
 ---
 
@@ -143,6 +143,7 @@ Java 21 · Spring Boot 4 · Spring MVC · Thymeleaf · Bootstrap 5 · Spring Dat
 | Versão | Data | Descrição |
 |---|---|---|
 | 0.1.0 | | Projeto inicial criado a partir do repositório modelo |
+| 1.0.0 | 11/11/2026 | Primeira versão estável |
 
 ## Usuários de teste
 
