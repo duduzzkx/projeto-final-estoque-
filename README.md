@@ -6,7 +6,25 @@
 | **Aluno(a)** | Eduardo Massi |
 | **Turma** |TEC-N-001788/2026 |
 | **Opção escolhida** | Controle de Estoque |
-| **Versão atual** | 1.0.0 |
+| **Versão atual** | 1.1.0 |
+
+1. Chamado #1 — Saída maior que o saldo era aceita
+Tipo: Corretiva
+
+Prioridade: Alta
+
+Status: Fechado
+
+Descrição: Corrigido o problema que permitia registrar uma saída de produtos com quantidade superior ao saldo disponível.
+
+ Chamado #2 — Total em reais no painel
+Tipo: Perfectiva
+
+Prioridade: Alta
+
+Status: Fechado
+
+Descrição: Implementada a exibição dos valores totais em reais (R$) no painel do sistema.
 
 ---
 
